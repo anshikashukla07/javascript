@@ -1,0 +1,20 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+   <defs>
+    <filter id="dropshadow" x="-40%" y="-40%" width="180%" height="180%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+      <feOffset dx="5" dy="5" result="offsetblur"/> 
+      <feOffset dx="-5" dy="-5" result="offsetblur"/>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="null" ry="48.5" rx="54.5" id="svg_4" cy="177.55" cx="191" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="#fff" style="filter:url(#dropshadow)"/>
+  <path stroke="null" transform="rotate(89.13551330566406 194.0649871826172,178.68295288085938) " id="svg_5" d="m176.36737,178.61168l17.69762,-29.62338l17.69762,29.62338l-8.84881,0l0,29.76592l-17.69761,0l0,-29.76592l-8.84881,0z" stroke-opacity="null" stroke-width="null" fill="#ff0066"/>
+ </g>
+</svg>

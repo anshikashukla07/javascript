@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 100px 100px 100px;
+}
+
+.main {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-item {
+  border: 1px solid #fff;
+  width: 50%;
+  height: 500px;
+}
+
+.first-item {	
+  background-image: linear-gradient(to right, #FF0066, #FF3366, #FF6666); 
+}
+
+.welcome {
+	align-content: center;
+}
+
+.header-container {
+	color: #fff;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.follow {
+	font-style: italic;
+	text-align: center;
+}
+
+input[type=text] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {	
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+label {
+	color: #FF0066;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+input[type = "button"] {
+	background-image: linear-gradient(to right, #FF0066, #FF3366, #FF6666);
+	border: none;
+	border-radius: 12px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.heart-container {
+	color: #fff;
+	background-color: #fff;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;	
+}
+
+.login {
+	text-align: center;
+}
+
+.heart-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.welcome-container {
+	display: flex;
+	justify-content: center;
+}
+
+.welcome {
+	width: 900px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.welcome1 {
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Georgia, serif;
+	color: #fff;
+}
+
+.welcome2 {
+	font-size: 20px;
+	font-style: italic;
+	font-family: Georgia, serif;
+	color: #fff;
+}
+
+.circle-arrow {
+	  position: absolute;
+	  left: 39.5%;
+      top: 25%;
+}
