@@ -4,10 +4,11 @@
     <meta charset='UTF-8'/>
     <title>Signup Page</title>
     <link rel='stylesheet' href='styles.css'/>
+
   </head>
   <body>
 
-  <div class="circle-arrow"><img src="images/arrow.svg" height="400" width="480"></div>
+  <div class="circle-arrow"><img src="images/arrow.svg" height="150px" width="150px"></div>
   <div class="main-container">
   	<div class="main">
   		<div class="main-item first-item">
@@ -28,13 +29,13 @@
 		    </div>
   			<div class="login">
   				
-			     <form>
+			     <form name="form" onsubmit="return submitForm()">
 			        <label for="name" style = "display: block;">Name</label>
-			        <input type="text" name="name" placeholder="Your name please" required />
+			        <input type="text" name="name" placeholder="Your name please" />
 			        <br />
 			        <br />
 			        <label for="email" style = "display: block;">Email</label>
-			        <input type="email" name="email" placeholder="Your email please" />
+			        <input type="text" name="email" placeholder="Your email please" />
 			        <br />
 			        <br />
 			        <label for="message" style = "display: block;">Message</label>
@@ -49,7 +50,7 @@
 				    	</div>
 			        </div>
 			        <br />
-			        <input type="button" value="Primary" />
+			        <input type="submit" value="Primary" />
 			    </form>
   			</div>
   		</div>
@@ -57,4 +58,34 @@
   </div>	
 
   </body>
+  <script type="text/javascript">
+    	function submitForm() {
+    		var username = document.form.name.value;
+    		var email = document.form.email.value;
+    		var textarea = document.form.message.value;
+
+    		var emailPattern = /^\w+([\.0-9]?\w+)*@\w+\.\w+$/;
+
+    		if(username == "" || (username.match(/\d+/g) != null))
+    		{
+    			alert('Username should not contain number or be empty');
+    			return false;
+    		}
+
+    		if(!(email.match(emailPattern)))
+    		{
+    			alert('Inavlid email');
+    			return false;
+    		}
+
+    		if(textarea == "")
+    		{
+    			alert('Text Box should not be empty');
+    			return false;
+    		}
+
+    		alert('Success');
+    		return true;
+    	}
+    </script>
 </html>

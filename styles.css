@@ -85,7 +85,7 @@ label {
 	font-weight: bold;
 }
 
-input[type = "button"] {
+input[type = "submit"] {
 	background-image: linear-gradient(to right, #FF0066, #FF3366, #FF6666);
 	border: none;
 	border-radius: 12px;
